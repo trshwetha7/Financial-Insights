@@ -1,0 +1,63 @@
+{
+  "automl": true,
+  "selected_model": "calibrated_linear_svm",
+  "trained_rows": 984,
+  "category_count": 13,
+  "categories": [
+    "cash",
+    "education",
+    "entertainment",
+    "groceries",
+    "health",
+    "income",
+    "insurance",
+    "restaurants",
+    "shopping",
+    "subscriptions",
+    "transport",
+    "travel",
+    "utilities"
+  ],
+  "metrics": {
+    "cv_macro_f1": 0.9218,
+    "cv_accuracy": 0.9225,
+    "test_macro_f1": 0.9144,
+    "test_accuracy": 0.9137,
+    "test_avg_confidence": 0.8505
+  },
+  "leaderboard": [
+    {
+      "model": "logistic_regression",
+      "cv_macro_f1": 0.921796635523506,
+      "cv_accuracy": 0.9224595826198009,
+      "test_macro_f1": 0.9144417433672044,
+      "test_accuracy": 0.9137055837563451,
+      "test_avg_confidence": 0.7394672110174668
+    },
+    {
+      "model": "calibrated_linear_svm",
+      "cv_macro_f1": 0.921796635523506,
+      "cv_accuracy": 0.9224595826198009,
+      "test_macro_f1": 0.9144417433672044,
+      "test_accuracy": 0.9137055837563451,
+      "test_avg_confidence": 0.8504961496866208
+    },
+    {
+      "model": "complement_nb",
+      "cv_macro_f1": 0.883112186494781,
+      "cv_accuracy": 0.8856122834005747,
+      "test_macro_f1": 0.891997917710709,
+      "test_accuracy": 0.8934010152284264,
+      "test_avg_confidence": 0.8707392626272736
+    },
+    {
+      "model": "sgd_logistic",
+      "cv_macro_f1": 0.03006146808209817,
+      "cv_accuracy": 0.09914956607552317,
+      "test_macro_f1": 0.010207801676995991,
+      "test_accuracy": 0.07106598984771574,
+      "test_avg_confidence": 0.0
+    }
+  ],
+  "sklearn_version": "1.8.0"
+}

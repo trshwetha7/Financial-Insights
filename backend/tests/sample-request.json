@@ -1,0 +1,40 @@
+{
+  "month": "2026-02",
+  "transactions": [
+    {
+      "date": "2026-02-01",
+      "description": "Monthly streaming plan",
+      "merchant": "Netflix",
+      "amount": 17,
+      "type": "debit"
+    },
+    {
+      "date": "2026-02-01",
+      "description": "Music subscription",
+      "merchant": "Spotify",
+      "amount": 11,
+      "type": "debit"
+    },
+    {
+      "date": "2026-02-02",
+      "description": "Creative cloud",
+      "merchant": "Adobe",
+      "amount": 56,
+      "type": "debit"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "Organic grocery run",
+      "merchant": "Whole Foods",
+      "amount": 170,
+      "type": "debit"
+    },
+    {
+      "date": "2026-02-20",
+      "description": "Electronics purchase",
+      "merchant": "Apple Store",
+      "amount": 640,
+      "type": "debit"
+    }
+  ]
+}

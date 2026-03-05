@@ -1,0 +1,51 @@
+date,description,merchant,amount,type
+2026-01-01,Monthly streaming plan,Netflix,17,debit
+2026-01-01,Music subscription,Spotify,11,debit
+2026-01-02,Creative cloud,Adobe,56,debit
+2026-01-03,Cloud storage plan,iCloud,3,debit
+2026-01-05,Weekly groceries,Whole Foods,138,debit
+2026-01-08,Dinner with friends,Sweetgreen,92,debit
+2026-01-10,Gas station top-up,Chevron,64,debit
+2026-01-11,Salary deposit,Employer Payroll,6200,credit
+2026-01-12,Ride to airport,Uber,48,debit
+2026-01-15,Travel booking,Delta,420,debit
+2026-01-18,Movie tickets,AMC,46,debit
+2026-01-22,Pharmacy order,CVS Pharmacy,29,debit
+2026-01-26,Electric bill payment,ConEdison,128,debit
+2026-02-01,Monthly streaming plan,Netflix,17,debit
+2026-02-01,Music subscription,Spotify,11,debit
+2026-02-02,Creative cloud,Adobe,56,debit
+2026-02-03,Cloud storage plan,iCloud,3,debit
+2026-02-03,Coffee and snack,Blue Bottle,18,debit
+2026-02-04,Sushi dinner,DoorDash,200,debit
+2026-02-05,Gourmet dinner reservation,Resy,180,debit
+2026-02-06,Organic grocery run,Whole Foods,170,debit
+2026-02-07,Fine dining date,OpenTable,160,debit
+2026-02-08,Weekend brunch,Sweetgreen,140,debit
+2026-02-09,Late night food order,DoorDash,120,debit
+2026-02-10,Groceries and produce,Trader Joe's,150,debit
+2026-02-11,Business lunch,Chipotle,110,debit
+2026-02-12,Utility internet bill,Comcast,98,debit
+2026-02-13,Electric utility bill,ConEdison,122,debit
+2026-02-14,Chef tasting event,Ticketmaster Food Fest,100,debit
+2026-02-14,Valentine dinner,Blue Hill,95,debit
+2026-02-15,Premium steakhouse,Morton's,85,debit
+2026-02-16,Downtown dinner,Sweetgreen,75,debit
+2026-02-17,Weekend coffee,Blue Bottle,55,debit
+2026-02-18,Quick lunch,Chipotle,44,debit
+2026-02-18,Farmers market groceries,Farmers Market,140,debit
+2026-02-19,Apparel shopping,Zara,120,debit
+2026-02-20,Online shopping order,Amazon,80,debit
+2026-02-20,Electronics purchase,Apple Store,640,debit
+2026-02-21,Local train pass,City Metro,130,debit
+2026-02-21,Rideshare commute,Uber,110,debit
+2026-02-22,Gas station payment,Chevron,120,debit
+2026-02-23,Pharmacy purchase,CVS Pharmacy,70,debit
+2026-02-23,Clinic copay,City Clinic,140,debit
+2026-02-24,Concert ticket,Ticketmaster,120,debit
+2026-02-24,Movie night,AMC,110,debit
+2026-02-25,Learning platform,Coursera,113,debit
+2026-02-26,Insurance premium,Geico,140,debit
+2026-02-27,Mobile phone bill,AT&T,60,debit
+2026-02-27,ATM cash withdrawal,ATM Withdrawal,98,debit
+2026-02-28,Salary deposit,Employer Payroll,6200,credit

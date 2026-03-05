@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spendlark Money - Your Money, Made Clear</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div class="bg-overlay"></div>
+    <div class="app-shell">
+      <header class="hero panel">
+        <p class="eyebrow">Personal Finance Insights</p>
+        <h1>Spendlark Money</h1>
+        <p class="hero-tagline">Your Money, Made Clear.</p>
+        <p class="hero-copy">
+          Upload statements and get practical monthly guidance to reduce waste and improve spending habits.
+        </p>
+        <div class="money-chips" aria-hidden="true">
+          <span class="money-chip">$</span>
+          <span class="money-chip">$</span>
+          <span class="money-chip">$</span>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="panel ingestion">
+          <div class="panel-head">
+            <h2>1. Load Statement Data</h2>
+            <p class="muted">
+              Supported: PDF statement, screenshot image, or CSV with transaction rows.
+            </p>
+          </div>
+
+          <div class="control-row">
+            <button id="load-sample" class="button ghost" type="button">Load sample data</button>
+            <input
+              id="statement-file"
+              type="file"
+              accept=".pdf,.png,.jpg,.jpeg,.webp,.bmp,.csv"
+            />
+            <button id="extract-file" class="button primary" type="button">
+              Extract transactions
+            </button>
+            <button id="clear-data" class="button ghost" type="button">Clear</button>
+          </div>
+
+          <label for="paste-input" class="field-label">Or paste CSV transactions</label>
+          <textarea
+            id="paste-input"
+            rows="6"
+            placeholder="date,description,merchant,amount,type&#10;2026-03-01,Weekly groceries,Whole Foods,126,debit&#10;2026-03-02,Payroll,Employer Payroll,5900,credit"
+          ></textarea>
+          <div class="control-row">
+            <button id="use-paste" class="button primary" type="button">Use pasted data</button>
+            <select id="month-select"></select>
+            <button id="analyze-button" class="button primary" type="button">Run analysis</button>
+            <button id="financial-tip" class="button ghost" type="button">Financial tip</button>
+            <button id="open-coach" class="button ghost" type="button">Open financial coach</button>
+          </div>
+          <p id="data-summary" class="muted"></p>
+          <p id="input-feedback" class="muted"></p>
+        </section>
+
+        <section class="panel preview">
+          <div class="panel-head">
+            <h2>2. Extracted Transaction Preview</h2>
+            <p class="muted">Clean view of uploaded transaction rows.</p>
+          </div>
+          <div class="table-wrap compact">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Merchant</th>
+                  <th>Amount</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody id="preview-table"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel kpi-panel">
+          <div class="panel-head">
+            <h2>3. Monthly Snapshot</h2>
+          </div>
+          <div class="kpi-grid">
+            <article class="kpi-card">
+              <p>Monthly spending</p>
+              <strong id="kpi-spending">--</strong>
+            </article>
+            <article class="kpi-card">
+              <p>MoM change</p>
+              <strong id="kpi-mom" class="neutral">--</strong>
+            </article>
+            <article class="kpi-card">
+              <p>Financial score</p>
+              <strong id="kpi-score">--</strong>
+            </article>
+            <article class="kpi-card">
+              <p>Subscription waste</p>
+              <strong id="kpi-waste">--</strong>
+            </article>
+          </div>
+          <div id="tip-card" class="tip-card">Run analysis to get monthly insights.</div>
+        </section>
+
+        <section class="panel breakdown">
+          <div class="panel-head">
+            <h2>Category Spend</h2>
+            <p class="muted">Where money went this month.</p>
+          </div>
+          <div id="category-bars" class="bar-list"></div>
+        </section>
+
+        <section class="panel priorities">
+          <div class="panel-head">
+            <h2>Priority Score by Category</h2>
+            <p class="muted">Higher points are better; negative points need trimming.</p>
+          </div>
+          <div id="priority-list" class="stack-list"></div>
+        </section>
+
+        <section class="panel forecast">
+          <div class="panel-head">
+            <h2>Next-Month Forecast</h2>
+            <p class="muted">Baseline forecast vs optimized plan.</p>
+          </div>
+          <div id="forecast-box" class="forecast-box"></div>
+          <div id="trend-bars" class="bar-list"></div>
+        </section>
+
+        <section class="panel subscriptions">
+          <div class="panel-head">
+            <h2>Subscription Review</h2>
+          </div>
+          <div id="subscription-list" class="stack-list"></div>
+        </section>
+
+        <section class="panel anomalies">
+          <div class="panel-head">
+            <h2>Anomaly Alerts</h2>
+            <p class="muted">Transactions flagged as unusual by behavioral analysis.</p>
+          </div>
+          <div id="anomaly-list" class="stack-list"></div>
+        </section>
+
+        <section class="panel quality">
+          <div class="panel-head">
+            <h2>Needs Review</h2>
+            <p class="muted">Transactions where category confidence is lower and should be checked.</p>
+          </div>
+          <div id="quality-list" class="stack-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <div id="tip-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="tip-title">
+      <div class="modal-card">
+        <div class="window-head">
+          <strong id="tip-title">Financial Tip</strong>
+          <button id="close-tip-modal" class="window-btn" type="button" aria-label="Close tip">✕</button>
+        </div>
+        <p id="tip-modal-content" class="modal-text">Click Financial tip to see a practical money habit.</p>
+        <div class="modal-actions">
+          <button id="modal-new-fact" class="button ghost" type="button">New fact</button>
+        </div>
+      </div>
+    </div>
+
+    <aside id="coach-window" class="coach-window hidden" aria-label="Financial coach">
+      <div class="window-head">
+        <strong>Financial Coach</strong>
+        <div class="window-controls">
+          <button id="coach-minimize" class="window-btn" type="button" aria-label="Minimize coach">−</button>
+          <button id="coach-maximize" class="window-btn" type="button" aria-label="Maximize coach">▢</button>
+          <button id="coach-close" class="window-btn" type="button" aria-label="Close coach">✕</button>
+        </div>
+      </div>
+      <div id="coach-body" class="coach-body">
+        <div id="coach-chat" class="coach-chat"></div>
+        <form id="coach-form" class="coach-form">
+          <input
+            id="coach-input"
+            type="text"
+            placeholder="Ask: How can I cut dining spend next month?"
+            autocomplete="off"
+          />
+          <button class="button primary" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+
+    <button id="coach-fab" class="coach-fab hidden" type="button">Financial coach</button>
+    <script type="module" src="/assets/app.js"></script>
+  </body>
+</html>
