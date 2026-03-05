@@ -1,7 +1,8 @@
 # Spendlark Money
 **Your Money, Made Clear.**
 
-Spendlark Money is a personal finance intelligence app that turns raw transaction statements into clear monthly insights, actionable recommendations and guided coaching. My motivation to create this comes from the very fact that I am not a financially responsible person :( While I believe that I dont end up spending more than $70 dollars on an item, I end up accumlating 300 items, and this ends up costing more than anything :)))
+Spendlark Money is a personal finance intelligence app that turns raw transaction statements into clear monthly insights, actionable recommendations, and guided coaching. My motivation for creating it comes from the fact that I am not always the most financially responsible person :( I might not spend more than $70 on a single item, but I end up buying 300 small things—and that adds up to way more than anything else :)))
+
 
 ## What This App Does
 - Ingests transaction data from **PDF statements**, **screenshots**, and **CSV files**.
@@ -55,7 +56,7 @@ Shows low-confidence categorization rows for manual verification.
 ![Monthly Forecast Feature](assets/screenshots/3-monthly-forecast-feature.png)
 
 ### 4) Points by Category (Comparison)
-| Higher Spend Impact | Reduced Spend Impact |
+| Spend Impact Positive | Spend Impact Negative|
 |---|---|
 | ![Points by Category Plus](assets/screenshots/4-points-by-category-plus.png) | ![Points by Category Minus](assets/screenshots/4-points-by-category-minus.png) |
 
