@@ -44,6 +44,21 @@ Shows low-confidence categorization rows for manual verification.
 - **Financial Coach**: conversational, context-aware support based on current analysis.
 - **Financial Tip**: rotating general finance fact/tip to keep users engaged with practical money habits.
 
+## Screenshots
+### 1) Webpage / Intro
+![Spendlark Money Intro](docs/assets/screenshots/1-webpage.png)
+
+### 2) Subscription Review Feature
+![Subscription Review](docs/assets/screenshots/2-subscription-review.png)
+
+### 3) Monthly Forecast Feature
+![Monthly Forecast Feature](docs/assets/screenshots/3-monthly-forecast-feature.png)
+
+### 4) Points by Category (Comparison)
+| Higher Spend Impact | Reduced Spend Impact |
+|---|---|
+| ![Points by Category Plus](docs/assets/screenshots/4-points-by-category-plus.png) | ![Points by Category Minus](docs/assets/screenshots/4-points-by-category-minus.png) |
+
 ## Financial Coach (LLM + LangChain)
 The coach is designed as a natural-language tutoring assistant:
 - responds directly to what the user asks
