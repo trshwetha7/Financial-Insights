@@ -1,7 +1,7 @@
 # Spendlark Money
 **Your Money, Made Clear.**
 
-Spendlark Money is a personal finance intelligence app that turns raw transaction statements into clear monthly insights, actionable recommendations, and guided coaching.
+Spendlark Money is a personal finance intelligence app that turns raw transaction statements into clear monthly insights, actionable recommendations and guided coaching. My motivation to create this comes from the very fact that I am not a financially responsible person :( While I believe that I dont end up spending more than $70 dollars on an item, I end up accumlating 300 items, and this ends up costing more than anything :)))
 
 ## What This App Does
 - Ingests transaction data from **PDF statements**, **screenshots**, and **CSV files**.
@@ -44,20 +44,6 @@ Shows low-confidence categorization rows for manual verification.
 - **Financial Coach**: conversational, context-aware support based on current analysis.
 - **Financial Tip**: rotating general finance fact/tip to keep users engaged with practical money habits.
 
-## Screenshots
-### 1) Webpage / Intro
-![Spendlark Money Intro](docs/assets/screenshots/1-webpage.png)
-
-### 2) Subscription Review Feature
-![Subscription Review](docs/assets/screenshots/2-subscription-review.png)
-
-### 3) Monthly Forecast Feature
-![Monthly Forecast Feature](docs/assets/screenshots/3-monthly-forecast-feature.png)
-
-### 4) Points by Category (Comparison)
-| Higher Spend Impact | Reduced Spend Impact |
-|---|---|
-| ![Points by Category Plus](docs/assets/screenshots/4-points-by-category-plus.png) | ![Points by Category Minus](docs/assets/screenshots/4-points-by-category-minus.png) |
 
 ## Financial Coach (LLM + LangChain)
 The coach is designed as a natural-language tutoring assistant:
