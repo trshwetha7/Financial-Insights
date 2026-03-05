@@ -1,5 +1,4 @@
 # Spendlark Money
-**Your Money, Made Clear.**
 
 Spendlark Money is a personal finance intelligence app that turns raw transaction statements into clear monthly insights, actionable recommendations, and guided coaching. My motivation for creating it comes from the fact that I am not always the most financially responsible person :( I might not spend more than $70 on a single item, but I end up buying 300 small things—and that adds up to way more than anything else :)))
 
