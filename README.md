@@ -95,4 +95,4 @@ This repository is intentionally structured so GitHub language stats clearly ref
 - **Markdown** - project documentation
 
 ## Author
-Built fully by **trshwetha7**.
+Built by **Shwetha Tinnium Raju**.
